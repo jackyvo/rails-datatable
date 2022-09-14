@@ -3,7 +3,7 @@ RSpec.describe Rails::Datatable do
     expect(Rails::Datatable::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "have the base class" do
+    expect(Rails::Datatable::Base.new.run).to eq(true)
   end
 end

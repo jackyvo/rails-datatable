@@ -19,12 +19,12 @@ Or install it yourself as:
 ## Usage
 
 ### 1. Install RailsDatatable
-	$ rails g rails::datatable::install
+	$ rails g rails:datatable:install
 
 ### 2. Generate resources
 #### 2.1 Generate databtable resources
 	
-	$ rails g rails::datatable::resource [User]
+	$ rails g rails:datatable:resource [User]
 
 #### 2.2 Implement json method in your controller
 ```ruby

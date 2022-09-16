@@ -12,12 +12,12 @@ gem 'rails-datatable'
 
 And then execute:
 
-  $ bundle
+    $ bundle
 
 Or install it yourself as:
 
-  $ gem install rails-datatable
-
+    $ gem install rails-datatable
+    
 ## Usage
 
 ### 1. Install RailsDatatable

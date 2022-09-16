@@ -24,7 +24,7 @@ Or install it yourself as:
 ### 2. Generate resources
 #### 2.1 Generate databtable resources
 	
-	$ rails g rails:datatable:resource [User]
+	$ rails g rails:datatable:resource User
 
 #### 2.2 Implement json method in your controller
 ```ruby

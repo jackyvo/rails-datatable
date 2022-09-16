@@ -11,9 +11,11 @@ gem 'rails-datatable'
 ```
 
 And then execute:
+
   $ bundle
 
 Or install it yourself as:
+
   $ gem install rails-datatable
 
 ## Usage
@@ -38,7 +40,7 @@ end
 
 #### 2.3 Set json path for your table in view
 ```html
-%table.table{data: { url: users_path(format: :json) }}
+%table.datatable{data: { url: users_path(format: :json) }}
   %thead
     %tr
       %th #

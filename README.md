@@ -11,40 +11,38 @@ gem 'rails-datatable'
 ```
 
 And then execute:
-
-    $ bundle
+  $ bundle
 
 Or install it yourself as:
-
-    $ gem install rails-datatable
+  $ gem install rails-datatable
 
 ## Usage
 
-### Install RailsDatatable
+### 1. Install RailsDatatable
 	$ rails g rails::datatable::install
 
-### Generate resources
-#### Generate databtable resources
+### 2. Generate resources
+#### 2.1 Generate databtable resources
 	
 	$ rails g rails::datatable::resource [User]
 
-#### Implement json method in your controller
+#### 2.2 Implement json method in your controller
 ```ruby
-	respond_to do |format|
-      format.html { }
-      format.json {
-        render json: UsersDatatable.new(view_context, @users)
-      }
-    end
+respond_to do |format|
+  format.html { }
+  format.json {
+    render json: UsersDatatable.new(view_context, @users)
+  }
+end
 ```
 
-#### Set json path for your table in view
+#### 2.3 Set json path for your table in view
 ```html
- %table.table{data: { url: users_path(format: :json) }}
-    %thead
-      %tr
-        %th #
-        %th ID
+%table.table{data: { url: users_path(format: :json) }}
+  %thead
+    %tr
+      %th #
+      %th ID
 ```
 
 ## Contributing
